@@ -13,7 +13,18 @@
 			.week-date { color: #666; font-style: italic; }
 			.less-bold { font-weight: 400; }
 			.image-caption { text-align: center; font-style: italic; color: #666; margin-top: -10px; }
-			
+
+			/* 🔹 NEW CODE ADDED BELOW: Makes image responsive within content */
+			#Notes img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: 15px auto;
+				border-radius: 8px;
+				box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+			}
+			/* 🔹 END OF NEW CODE */
+
 			/* In-Page Navigation Box CSS */
 			.inpage-nav-box {
 				float: right;
@@ -143,14 +154,15 @@
 								<h3>I created github repository for FabLab documentation.</h3>
 							</header>
 							<ul class="alt">
-								<li><strong>Skills Learned: Good Documetation</strong> </li>
+								<li><strong>Skills Learned: Good Documentation</strong> </li>
 								<li><strong>Digital Tools and Software Used: Github page</strong> </li>
 								<li><strong>Topics: Version Control</strong> </li>
 								<li><strong>Key Concepts: Digital Documentation</strong> </li>
-								<li><strong>Challenges Faced: Slow rendeing from Github page thus one might think there were no changes committed</strong> </li>
+								<li><strong>Challenges Faced: Slow rendering from Github page thus one might think there were no changes committed</strong> </li>
 							</ul>
 						</div>
-						<!-- ... all your existing week1 content bellow... -->
+
+						<!-- ... all your existing week1 content below... -->
 						<div id="Notes" class="tab-content active">
 							<div>
 								&nbsp;
@@ -162,8 +174,6 @@
 								The session introduces FabLab and explains how an individual can create a GitHub repository. 
 								It also discusses design thinking and its importance. 
 								Finally, it introduces computer-aided design (CAD), covering both 2D and 3D design.	
-								
-								
 								</p>
 
 								<header class="major">
@@ -171,14 +181,16 @@
 								</header>
 								<p>Add the process documentation of this week task</p>
 
-								<div> <img src="1.PNG" alt="Tlotlisang Lekena" />  </div>
-						
+								<!-- Image Section -->
+								<div> 
+									<img src="1.PNG" alt="Tlotlisang Lekena" />  
+								</div>
+
 								<!-- Reflection -->
 								<header class="major">
 								<h2 id="reflection-section">Reflection</h2>
 								</header>
 								<p>Add your reflection</p>
-								
 							</div>
 						</div>
 					</section>
@@ -201,19 +213,15 @@
 		
 		<!-- Page-specific JavaScript -->
 		<script>
-			// Initialize page-specific functionality
 			document.addEventListener('DOMContentLoaded', function() {
-				// Tab functionality
 				const tabButtons = document.querySelectorAll('.tab-button');
 				tabButtons.forEach(button => {
 					button.addEventListener('click', function() {
 						const tabName = this.getAttribute('data-tab');
 						
-						// Update buttons
 						tabButtons.forEach(btn => btn.classList.remove('active'));
 						this.classList.add('active');
 						
-						// Update content
 						document.querySelectorAll('.tab-content').forEach(tab => {
 							tab.style.display = 'none';
 							tab.classList.remove('active');
@@ -227,7 +235,6 @@
 					});
 				});
 				
-				// Navigation toggles
 				const navToggles = document.querySelectorAll('.nav-toggle-button');
 				navToggles.forEach(toggle => {
 					toggle.addEventListener('click', function() {
@@ -240,7 +247,6 @@
 					});
 				});
 				
-				// Set first tab as active by default
 				const firstTab = document.querySelector('.tab-content.active');
 				if (firstTab) {
 					firstTab.style.display = 'block';
