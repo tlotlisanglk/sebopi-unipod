@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Week 4: 3D design - Tlotlisang Lekena</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+
+    <!-- 🔹 GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" />
+
+    <style>
+        /* Your existing week1 styles here */
+        .week-date { color: #666; font-style: italic; }
+        .less-bold { font-weight: 400; }
+        .image-caption { text-align: center; font-style: italic; color: #666; margin-top: -10px; }
+
+        /* 🔹 NEW CODE ADDED BELOW: Makes image responsive within content */
+        #Notes img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        /* 🔹 END OF NEW CODE */
+
+        /* In-Page Navigation Box CSS */
+        .inpage-nav-box {
+            float: right;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
+            width: 220px;
+            margin-bottom: 1.5em;
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-size: 0.9em;
+            z-index: 1000;
+        }
+
+        .inpage-nav-box h4 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #3d4449;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        .nav-toggle-button {
+            background: none;
+            border: 1px solid #cccccc;
+            color: #333333;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 1px 6px;
+            border-radius: 4px;
+            line-height: 1.2;
+            margin-left: 5px;
+        }
+
+        .nav-toggle-button:hover {
+            background-color: #e9e9e9;
+            border-color: #bbbbbb;
+        }
+
+        .inpage-nav-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .inpage-nav-box ul.collapsed {
+            display: none;
+        }
+
+        .inpage-nav-box ul li {
+            margin-bottom: 8px;
+        }
+
+        .inpage-nav-box ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .inpage-nav-box ul li a {
+            text-decoration: none;
+            color: #2980B9;
+            display: block;
+            padding: 3px 0;
+        }
+
+        .inpage-nav-box ul li a:hover {
+            text-decoration: underline;
+            color: #1c6691;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .inpage-nav-box {
+                float: none;
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main Content -->
+        <div id="main">
+            <div class="inner">
+                <!-- Header -->
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>Sebopi UniPod Lesotho |</strong> Tlotlisang Lekena </a>
+                    <ul class="icons">
+                        <li><a href="your-github-link" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="your-linkedin-link" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="mailto:your-email@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Week 1 Content -->
+                <section>
+                    <div class="inpage-nav-box">
+                        <h4>
+                            On This Page
+                            <button class="nav-toggle-button" aria-expanded="true" aria-controls="nav-list-week1" title="Toggle navigation list">-</button>
+                        </h4>
+                        <ul id="nav-list-week1">
+                            <li><a href="#intro-section">Introduction</a></li>
+                            <li><a href="#process-docs-section">Process Documentation</a></li>
+                            <li><a href="#reflection-section">Reflection</a></li>
+                        </ul>
+                    </div>
+
+                    <header class="main">
+                        <h1>Week 4: 3D design </h1>
+                        <p class="week-date">Date: 27-10-2025 - 10-11-2025</p>
+                    </header>
+
+                    <!-- Summary of the weekly task -->
+                    <div class="box" id="quick-summary">
+                        <header class="major">
+                            <h3>Design Using 3D software</h3>
+                        </header>
+                        <ul class="alt">
+                            <li><strong>Skills Learned: 3D design</strong> </li>
+                            <li><strong>Digital Tools and Software Used: Solid Works </strong> </li>
+                            <li><strong>Topics: 3D design</strong> </li>
+                            <li><strong>Key Concepts: 3D design</strong> </li>
+                            <li><strong>Challenges Faced: The ability design and combine diffrent parts together</strong> </li>
+                        </ul>
+                    </div>
+
+                    <!-- ... all your existing week1 content below... -->
+                    <div id="Notes" class="tab-content active">
+                        <div>
+                            &nbsp;
+                            <!-- Introduction -->
+                            <header class="major">
+                            <h2 id="intro-section">Introduction</h2>
+                            </header>
+                            <p> 
+                            The session introduces a way to desing prototypes using 3D design softwares   
+                            </p>
+
+                            <header class="major">
+                            <h2 id="process-docs-section">Process Documentation</h2>
+                            </header>
+                            
+                   
+
+
+
+                            <p> <b>Figue 1</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/arm/1.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/arm/1.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 1</b> above shows the design of an upper hand part of a robot. A rectangular sketch
+                            is drawn and extruded boss.
+                        </p>
+
+                        <p> <b>Figue 2</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/arm/2.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/arm/2.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 2</b> above shows the design of an upper hand part of a robot where the 
+                            part that is to be joined with the body is extruded cut.
+                        </p>
+
+                        <p> <b>Figue 3</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/arm/3.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/arm/3.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 3</b> above shows the design of an upper hand part of a robot where the part 
+                            that is going to be joined with the hand is extruded cut.
+                        </p>
+
+                        <p> <b>Figue 4</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/arm/4.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/arm/4.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 4</b> above shows the design of an upper hand part of a robot where chamfer feature
+                            is applied at the edges of the rectangular shape.
+                        </p>
+
+<p>******************************** End of upper hand design *******************************</p> <br>
+
+
+                        <p> <b>Figue 1</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/1.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/1.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 1</b> above shows the design of the body of a robot. The rectangular sketch
+                            is made and then extruded boss to give it z direction height. the chamfer is used
+                            to give the outer body the real shape of the robot. 
+                        </p>
+
+                        
+                        <p> <b>Figue 2</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/2.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/2.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 2</b> above shows the design of an upper hand connection. The center circle
+                            is used to sketch the connection and extruded boss.
+                        </p>
+
+                         <p> <b>Figue 3</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/3.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/3.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 3</b> above shows the design of an upper hand connection. Mirror feature 
+                            is used to mirror the other connection of the upper hand on the other side.
+                        </p>
+
+                         <p> <b>Figue 4</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/4.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/4.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 4</b> above shows the design of legs connection. The sketch is made 
+                            using the center circle feature.
+                        </p>
+
+                         <p> <b>Figue 5</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/5.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/5.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 5</b> above shows the design of legs connection. The sketch is made 
+                            using the center circle feature and the extruded cut feature is applied.
+                        </p>
+
+                        <p> <b>Figue 6</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/6.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/6.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 6</b> above shows the design of head connection. The sketch is made up
+                            of circular circle. The extruded cut feature is applied so that the head's neck can be
+                            inserted
+                        </p>
+
+                        <p> <b>Figue 7</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/7.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/7.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 7</b> above shows the design of the Sebopi UniPod text. The line tool
+                            is used to draw a line that is used by text tool to write text.
+                        </p>
+
+                        <p> <b>Figue 8</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/body/8.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/body/8.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 8</b> above shows the design of a text named Sebopi UniPod
+                        </p>
+                        
+                  <p>******************************** End of upper hand design *******************************</p> <br>
+                            
+                   <p> <b>Figue 1</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/foot/1.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/foot/1.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 1</b> above shows the design of a foot of a robot. A sketch and extruded boss 
+                            is done.
+                  </p>
+
+                  <p> <b>Figue 2</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/foot/2.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/foot/2.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 2</b> above shows the design of a foot of a robot. a line tool
+                            was used to draw a line that will enable the semi circle to be drawn on the 
+                            front of the extruded boss rectangle. The extruded cut is then applied to remove
+                            the material of rectangle that are not needed
+                  </p>
+
+                  <p> <b>Figue 3</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/foot/3.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/foot/3.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 3</b> above shows the design of a foot of a robot. The top material
+                            left is sketched so that the leg of the robot can be inserted in it. The sketch was 
+                            extruded cut to fit the leg.
+                  </p>
+
+
+                  
+                  <p> <b>Figue 1</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/hand/1.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/hand/1.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 1</b> above shows the design of a hand of a robot. The sketch tool 
+                            is used to show the hand size. The smart dimension tool is used to give the size.
+
+                  </p>
+
+
+                    <p> <b>Figue 2</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/hand/2.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/hand/2.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 2</b> above shows the design of a hand of a robot. The sketch is 
+                            modified by applying chamber feature that shapes well the edges of the hand.
+
+                  </p>
+
+                  <p> <b>Figue 3</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/hand/3.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/hand/3.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 3</b> above shows the design of a hand of a robot. The finger
+                            is sketched using center circle feature and extruded boss is applied.
+                  </p>
+
+                  <p> <b>Figue 4</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/hand/4.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/hand/4.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 4</b> above shows the design of a hand of a robot. The other
+                            fingers are sketched the same way as the first finger but given 
+                            different extruded boss sizes.
+                  </p>
+
+                  <p> <b>Figue 5</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/hand/5.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/hand/5.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 5</b> above shows the design of a hand of a robot. The fillet feature
+                            is applied to all the fingers
+                        
+                  </p>
+
+
+                  <p> <b>Figue 6</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/hand/6.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/hand/6.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 6</b> above shows the design of a hand of a robot. The hand joined
+                            is sketched to allow the hand to fit well in the arm part.
+
+                  </p>
+
+
+<p>******************************** End of hand design *******************************</p> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+                       <p> <b>Figue 1</b> below shows steps of designing parts of a robot </p>
+                            <div> 
+                                <a href="images/week4/robot assembly.PNG" class="glightbox" data-glightbox="title: Tlotlisang Lekena">
+                                    <img src="images/week4/robot assembly.PNG" alt="Tlotlisang Lekena" />
+                                </a>  
+                            </div>
+                           <p> <b>Figue 1</b> above shows complete design of a robot after the parts were assembled.
+                        </p>
+
+
+
+<p>******************************** End of robot assembly *******************************</p> <br>
+                
+
+
+
+                            <!-- Reflection -->
+                            <header class="major">
+                            <h2 id="reflection-section">Reflection</h2>
+                            </header>
+                            <p>The lesson introduced the 3D design using Solid works. The design starts with
+                                the sketch of what you need to do and then you use the features that come with 
+                                solidworks software to turn the 2D model into 3D model.
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Sidebar (will be loaded automatically by sidebar-loader.js) -->
+        <div id="sidebar">
+            <!-- Sidebar content will be injected here -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/sidebar-loader.js"></script> <!-- Universal sidebar loader -->
+
+    <!-- GLightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+
+    <!-- Page-specific JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabName = this.getAttribute('data-tab');
+                    
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    document.querySelectorAll('.tab-content').forEach(tab => {
+                        tab.style.display = 'none';
+                        tab.classList.remove('active');
+                    });
+                    
+                    const activeTab = document.getElementById(tabName);
+                    if (activeTab) {
+                        activeTab.style.display = 'block';
+                        activeTab.classList.add('active');
+                    }
+                });
+            });
+            
+            const navToggles = document.querySelectorAll('.nav-toggle-button');
+            navToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const navList = this.closest('.inpage-nav-box').querySelector('ul');
+                    if (navList) {
+                        navList.classList.toggle('collapsed');
+                        this.textContent = navList.classList.contains('collapsed') ? '+' : '-';
+                        this.setAttribute('aria-expanded', !navList.classList.contains('collapsed'));
+                    }
+                });
+            });
+            
+            const firstTab = document.querySelector('.tab-content.active');
+            if (firstTab) {
+                firstTab.style.display = 'block';
+            }
+
+            // 🔹 Initialize GLightbox
+            const lightbox = GLightbox({
+                selector: '.glightbox'
+            });
+        });
+    </script>
+</body>
+</html>
